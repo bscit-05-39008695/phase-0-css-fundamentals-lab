@@ -3,3 +3,54 @@ body {
   height: 100%;
   margin: 0;
 }
+/* Center the header text */
+header {
+  text-align: center; /* Center align text in header */
+}
+
+/* Center the image in the featured property section */
+#featured-property img {
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Style the navigation links */
+nav a {
+  padding: 10px 20px; /* Add padding to links */
+  background-color: grey; /* Set background color */
+  color: white; /* Set text color */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 5px; /* Add margin between links */
+}
+
+/* Center the caption of the image */
+figcaption {
+  font-size: 14px; /* Smaller font size */
+  text-align: center; /* Center the text */
+}
+
+/* Center the text within the featured property section */
+#featured-property p {
+  width: 800px; /* Set width of paragraph */
+  margin: 20px auto; /* Center the paragraph with vertical space */
+  text-align: center; /* Center the text */
+}
+
+/* Style the details section to float divs to the left */
+#details {
+  overflow: hidden; /* Clear floats */
+}
+
+#details div {
+  float: left; /* Float each div to the left */
+  width: 25%; /* Set width to 25% */
+  background-color: red; /* Background color for each div */
+  text-align: center; /* Center text in divs */
+}
+
+/* Clear floats after the last div */
+#details::after {
+  content: ""; /* Clearfix */
+  display: table; /* Ensure the parent contains the floated children */
+  clear: both; /* Clear floats */
+}
